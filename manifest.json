@@ -1,0 +1,44 @@
+{
+    "manifest_version": 2,
+    "name": "Zapex: Create Custom Integrations Between Any Apps",
+    "version": "0.1",
+    "icons": {
+       "16": "/assets/img/favicon.png",
+       "64": "/assets/img/favicon.png"
+    },
+
+    "permissions": [
+        "tabs",
+        "chrome://favicon/",
+        "http://*/*",
+        "https://*/*",
+        "storage"
+    ],
+
+    "background" : {
+        "scripts" : [
+            "/assets/js/jquery-1.11.1.min.js",
+            "/assets/js/background.js"
+        ]
+    },
+
+    "page_action": {
+        "default_title": "Zapex",
+        "default_icon": "assets/img/favicon.png",
+        "default_popup": "assets/html/popup.html"
+    },
+
+    "content_scripts": [ {
+        "js": [
+            "/assets/js/jquery-1.11.1.min.js",
+            "/assets/js/content_script.js"
+        ],
+        "matches": [
+            "https://*.stamplay.com/*",
+            "http://*.stamplay.com/*",
+            "http://app.clearestimates.com/*",
+            "https://app.clearestimates.com/*"
+        ]
+    }],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

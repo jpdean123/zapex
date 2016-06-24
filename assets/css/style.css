@@ -1,0 +1,30 @@
+.wrapper {
+	padding: 0;
+	text-align: center;
+	min-width: 250px;
+	background: #F7F7F9;
+}
+.panel .input-group {
+	margin-bottom: 10px;
+}
+.panel a.pull-right {
+	margin-top: 10px;
+}
+.error {
+	color: red;
+	display: none;
+}
+.search-option .input-group-addon {
+	width: 100px;
+}
+.list {
+	padding: 0 20px;
+	list-style: none;
+}
+.list li button {
+	background-color: #337ab7;
+	color: white;
+}
+a {
+	cursor: pointer;
+}

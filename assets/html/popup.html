@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/popup.js"></script>
+    <script type="text/javascript" src="../js/stamplay.min.js"></script>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+	<div class="wrapper container" id="main">
+
+		<div class="row" id="login">
+			<div class="panel panel-default bot clearfix panel-primary" style="margin-bottom:0;">
+				<div class="panel-heading">
+					<h4>Login</h4>
+				</div>
+				<div class="panel-body">
+					<p class="error">Invalid email or password</p>
+					<div class="input-group search-option">
+						<div class="input-group-addon">Email</div>
+						<input type="text" class="form-control" id="value1">
+					</div>
+					<div class="input-group search-option">
+						<div class="input-group-addon">Password</div>
+						<input type="password" class="form-control" id="value2">
+					</div>
+					<div class="fieldset">
+						<button class="btn btn-success" id="submit" title="" style="">Login</button>
+					</div>
+					<a class="pull-right" target="_blank" href='https://zapex.stamplayapp.com/#/login'>Signup here</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="tasklists" style="display: none;">
+			<div class="panel panel-default bot clearfix panel-primary" style="margin-bottom:0;">
+				<div class="panel-heading">
+					<h4>Zapex</h4>
+				</div>
+				<div class="panel-body">
+					<p>Available tasks for <b>app.clearestimates.com</b></p>
+					<ul class='list'>
+<!-- 						<li>
+							<button class="form-control">task1</button>
+						</li>
+						<li>
+							<button class="form-control">task1</button>
+						</li> -->
+					</ul>
+					<a class="pull-right" id="back-to-login">Login with another user</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="success" style="display: none;">
+			<div class="panel panel-default bot clearfix panel-primary" style="margin-bottom:0;">
+				<div class="panel-heading">
+					<h4>Zapex</h4>
+				</div>
+				<div class="panel-body">
+					<p>Success! We've sent the data to Zapier, go check it out there and use Zapier to send your data to any app you like!</p>
+					<ul class='list'>
+						<li>
+							<button class="form-control" id="back-to-task-list">Awesome!</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
